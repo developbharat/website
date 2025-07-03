@@ -1,0 +1,62 @@
+---
+import HomeLayout from "@layouts/Home.astro";
+---
+
+<HomeLayout title="Sign In">
+    <div class="uxora-section-padding5 bg-light2 height-100vh">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="uxora-content-thumb">
+                        <img src="assets/images/content/thumb6.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="uxora-contact-title">
+                        <h2>Welcome back</h2>
+                    </div>
+                    <form action="#">
+                        <div class="uxora-contact-box box2 mt-50">
+                            <div class="uxora-main-field">
+                                <p>Email Address*</p>
+                                <input type="text" />
+                            </div>
+                            <div class="uxora-main-field">
+                                <p>Password*</p>
+                                <input
+                                    id="password-field"
+                                    type="password"
+                                    class="form-control"
+                                    name="password"
+                                    value="Min 8 characters"
+                                />
+                                <div
+                                    toggle="#password-field"
+                                    class="fa fa-fw fa-eye field-icon toggle-password"
+                                >
+                                </div>
+                            </div>
+                            <div class="uxora-form-box forgot-password">
+                                <input type="checkbox" id="css" />
+                                <label for="css"> Remember me </label>
+                                <a href="/forgot-password"
+                                    >Forget your password?</a
+                                >
+                            </div>
+                            <button
+                                class="uxora-default-btn d-block"
+                                type="button">Login now</button
+                            >
+                            <div class="form-bottom-text">
+                                <p>
+                                    Don’t have an account?
+                                    <a href="/sign-up">Create an account</a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</HomeLayout>

@@ -1,11 +1,168 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import HomeLayout from "@layouts/Home.astro";
+import HeroSection from "@components/Home/HeroSection.astro";
+import BrandsSection from "@components/Home/BrandsSection.astro";
+import FeaturesSection from "@components/Home/FeaturesSection.astro";
+import TestimonialsSection from "@components/Home/TestimonialsSection.astro";
+import FAQSection from "@components/Home/FAQSection.astro";
+import CTASection from "@components/Shared/CTASection.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<HomeLayout>
+    <HeroSection />
+    <BrandsSection />
+    <FeaturesSection />
+
+    <section class="uxora-section-padding bg-light2">
+        <div class="container">
+            <div
+                class="uxora-content-item"
+                data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
+            >
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="uxora-content-thumb">
+                            <img
+                                src="assets/images/content/thumb1.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="uxora-default-content max-550">
+                            <h2>Generate high-quality websites from text</h2>
+                            <p class="uxora-default-data">
+                                आप केवल एक सरल टेक्स्ट प्रॉम्प्ट से बेहतरीन
+                                डिज़ाइन्स बना सकते हैं — चाहे वो वेबसाइट लेआउट
+                                हो, डैशबोर्ड, पोर्टफोलियो या UI/UX का कोई भी
+                                हिस्सा। कोई कोडिंग या जटिल टूल की ज़रूरत नहीं —
+                                बस अपने विचार लिखें, और हमारा टूल उन्हें सुंदर
+                                वेबसाइट्स में बदल देगा।
+                            </p>
+                            <p class="uxora-default-data">
+                                आपको बिना किसी तकनीकी झंझट के उच्च गुणवत्ता वाले
+                                डिज़ाइन्स बनाने की पूरी आज़ादी देता है।
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="uxora-content-item mt-50"
+                data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});"
+            >
+                <div class="row">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="uxora-content-thumb thumb2">
+                            <img
+                                src="assets/images/content/thumb2.png"
+                                alt=""
+                            />
+                            <div class="uxora-content-shape">
+                                <img
+                                    src="assets/images/content/shape1.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="uxora-content-shape2">
+                                <img
+                                    src="assets/images/content/card.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="uxora-default-content pl-50">
+                            <h2>Perfect emails with touch of AI</h2>
+                            <p class="uxora-default-data">
+                                हमने बनाई है एक ऐसी ईमेल सेवा, जो आम आदमी से
+                                लेकर डेवलपर्स, बिज़नेस और मार्केटिंग तक – हर
+                                किसी के लिए आसान और सुविधाजनक है। यह सिर्फ ईमेल
+                                नहीं, बल्कि आपकी सुरक्षा की पूरी ज़िम्मेदारी भी
+                                निभाती है — ताकि आप निश्चिंत होकर अपने संवाद बना
+                                सकें।
+                            </p>
+                            <h3>
+                                Write engaging emails faster with inhouse AI
+                            </h3>
+                            <h3>
+                                You own your data with latest encryption
+                                standards
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="uxora-content-item mt-50"
+                data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
+            >
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="uxora-content-thumb thumb3">
+                            <img
+                                src="assets/images/content/thumb3.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="uxora-default-content max-550">
+                            <h2>Your personal chat & social media</h2>
+                            <p class="uxora-default-data">
+                                यहाँ आप न सिर्फ़ व्यक्तिगत (P2P) और समूह चैट्स
+                                से जुड़ सकते हैं, बल्कि अपनी खुद की कम्युनिटी भी
+                                बना और प्रबंधित कर सकते हैं। हर संबंध को
+                                सुरक्षित, सहज और सार्थक बनाने की हमारी एक नई
+                                पहल।
+                            </p>
+                            <h3>Security that FBI can't even decrypt</h3>
+                            <h3>Trusted profiles & authentic connections</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="uxora-content-item mt-50"
+                data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 400});"
+            >
+                <div class="row">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="uxora-content-thumb thumb4">
+                            <img
+                                src="assets/images/content/thumb5.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="uxora-default-content pl-50">
+                            <h2>Store your files in one place</h2>
+                            <p class="uxora-default-data">
+                                यहाँ आप न सिर्फ़ अपनी फ़ाइलों और फ़ोल्डरों को
+                                आसानी से व्यवस्थित कर सकते हैं, बल्कि S3 स्टोरेज
+                                जैसी उन्नत सुविधाओं का लाभ भी उठा सकते हैं। साथ
+                                ही, आप अपने पसंदीदा AI टूल्स को भी Hind Drive से
+                                जोड़कर काम को और स्मार्ट बना सकते हैं। पूरी
+                                आज़ादी, पूरी सुरक्षा – अब स्टोरेज पर आपका
+                                नियंत्रण।
+                            </p>
+                            <p class="uxora-default-data">
+                                Whether you’re a beginner or an experienced
+                                writer, you can start storing files just a few
+                                clicks, without any technical skills.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end content -->
+
+    <TestimonialsSection />
+    <FAQSection />
+
+    <CTASection />
+</HomeLayout>

@@ -1,0 +1,102 @@
+---
+import HomeLayout from "@layouts/Home.astro";
+---
+
+<HomeLayout title="Connect with Us">
+    <div class="breadcrumb-wrapper bg-light2">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <h1 class="breadcrumb-title pb-0">Contact Us</h1>
+                <div class="breadcrumb-menu-wrapper">
+                    <div class="breadcrumb-menu-wrap">
+                        <div class="breadcrumb-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <img
+                                        src="assets/images/feature/slash.svg"
+                                        alt="slash"
+                                    />
+                                </li>
+                                <li aria-current="page">Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End breadcrumb -->
+
+    <div class="uxora-section-padding">
+        <div class="container">
+            <div
+                class="row"
+                data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
+            >
+                <div class="col-lg-6">
+                    <div class="uxora-default-content">
+                        <h2>Get in touch with our support team</h2>
+                        <p>
+                            Book an appointment with our team now! If you have
+                            any questions about our AI writing tool, contact our
+                            team.
+                        </p>
+                        <div class="uxora-conatct-info mt-50">
+                            <ul>
+                                <li>
+                                    <a href="mailto:name@gmail.com">
+                                        <span>Email:</span> support@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+088">
+                                        <span>Phone:</span> (123) 456-7890
+                                    </a>
+                                </li>
+                                <li><span>Chat:</span> Drop us a line</li>
+                                <li>
+                                    <span>Address:</span> 456 Elm Street, Los Angeles,
+                                    CA 90001, USA
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uxora-contact-shape">
+                            <img
+                                src="assets/images/shape/contact-shape.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="uxora-contact-box">
+                        <h3>Fill out the form below</h3>
+                        <form action="#">
+                            <div class="uxora-main-field">
+                                <p>Name</p>
+                                <input type="text" />
+                            </div>
+                            <div class="uxora-main-field">
+                                <p>Email</p>
+                                <input type="email" />
+                            </div>
+                            <div class="uxora-main-field">
+                                <p>Phone number</p>
+                                <input type="text" />
+                            </div>
+                            <p>Message</p>
+                            <div class="uxora-main-field-textarea">
+                                <textarea name="textarea"></textarea>
+                            </div>
+                            <button class="uxora-default-btn" type="button"
+                                >Send Message</button
+                            >
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+</HomeLayout>
