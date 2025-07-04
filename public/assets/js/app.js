@@ -1,23 +1,108 @@
 "use strict";
 
-function _createForOfIteratorHelper(r, e) { var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (!t) { if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) { t && (r = t); var _n = 0, F = function F() {}; return { s: F, n: function n() { return _n >= r.length ? { done: !0 } : { done: !1, value: r[_n++] }; }, e: function e(r) { throw r; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var o, a = !0, u = !1; return { s: function s() { t = t.call(r); }, n: function n() { var r = t.next(); return a = r.done, r; }, e: function e(r) { u = !0, o = r; }, f: function f() { try { a || null == t["return"] || t["return"](); } finally { if (u) throw o; } } }; }
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _createForOfIteratorHelper(r, e) {
+  var t =
+    ("undefined" != typeof Symbol && r[Symbol.iterator]) || r["@@iterator"];
+  if (!t) {
+    if (
+      Array.isArray(r) ||
+      (t = _unsupportedIterableToArray(r)) ||
+      (e && r && "number" == typeof r.length)
+    ) {
+      t && (r = t);
+      var _n = 0,
+        F = function F() {};
+      return {
+        s: F,
+        n: function n() {
+          return _n >= r.length ? { done: !0 } : { done: !1, value: r[_n++] };
+        },
+        e: function e(r) {
+          throw r;
+        },
+        f: F,
+      };
+    }
+    throw new TypeError(
+      "Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
+    );
+  }
+  var o,
+    a = !0,
+    u = !1;
+  return {
+    s: function s() {
+      t = t.call(r);
+    },
+    n: function n() {
+      var r = t.next();
+      return ((a = r.done), r);
+    },
+    e: function e(r) {
+      ((u = !0), (o = r));
+    },
+    f: function f() {
+      try {
+        a || null == t["return"] || t["return"]();
+      } finally {
+        if (u) throw o;
+      }
+    },
+  };
+}
+function _toConsumableArray(r) {
+  return (
+    _arrayWithoutHoles(r) ||
+    _iterableToArray(r) ||
+    _unsupportedIterableToArray(r) ||
+    _nonIterableSpread()
+  );
+}
+function _nonIterableSpread() {
+  throw new TypeError(
+    "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
+  );
+}
+function _unsupportedIterableToArray(r, a) {
+  if (r) {
+    if ("string" == typeof r) return _arrayLikeToArray(r, a);
+    var t = {}.toString.call(r).slice(8, -1);
+    return (
+      "Object" === t && r.constructor && (t = r.constructor.name),
+      "Map" === t || "Set" === t
+        ? Array.from(r)
+        : "Arguments" === t ||
+            /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t)
+          ? _arrayLikeToArray(r, a)
+          : void 0
+    );
+  }
+}
+function _iterableToArray(r) {
+  if (
+    ("undefined" != typeof Symbol && null != r[Symbol.iterator]) ||
+    null != r["@@iterator"]
+  )
+    return Array.from(r);
+}
+function _arrayWithoutHoles(r) {
+  if (Array.isArray(r)) return _arrayLikeToArray(r);
+}
+function _arrayLikeToArray(r, a) {
+  (null == a || a > r.length) && (a = r.length);
+  for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
+  return n;
+}
 (function ($) {
   "use strict";
 
   /*--------------------------------------------------------------
    [Table of contents]
-  
+
   UXORA PRELOADER JS INIT
   UXORA HEADER TRIGER JS INIT
   UXORA MENU SIDEBAR JS INIT
   UXORA PROGRES CIRCLE JS INIT
-  UXORA MAGNIFIC PUPOP JS INIT
   UXORA BRAND SLIDER INIT
   UXORA COUNTER JS INIT
   UXORA TSTIMONIAL SLIDER INIT
@@ -25,8 +110,8 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
   UXORA AOS ANIMATION JS INIT
   UXORA PORTFOLIO MASONAY FILTER JS
   UXORA TOGGLE PASSOWRD JS INIT
-  
-  
+
+
   -------------------------------------------------------------------*/
 
   /*--------------------------------------------------------------
@@ -62,11 +147,11 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
     $(".uxora-sidemenu-close, .offcanvas-overlay").on("click", function () {
       $(".uxora-sidemenu-column, .offcanvas-overlay").removeClass("active");
     });
-    $(window).on('scroll', function () {
+    $(window).on("scroll", function () {
       if ($(window).scrollTop() > 50) {
-        $('#sticky-menu').addClass('sticky-menu');
+        $("#sticky-menu").addClass("sticky-menu");
       } else {
-        $('#sticky-menu').removeClass('sticky-menu');
+        $("#sticky-menu").removeClass("sticky-menu");
       }
     });
 
@@ -74,54 +159,48 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
     UXORA PROGRES CIRCLE JS INIT
     --------------------------------------------------------------*/
 
-    var progressPath = document.querySelector('.progress-wrap path');
+    var progressPath = document.querySelector(".progress-wrap path");
     var pathLength = progressPath.getTotalLength();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
-    progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+    progressPath.style.transition = progressPath.style.WebkitTransition =
+      "none";
+    progressPath.style.strokeDasharray = pathLength + " " + pathLength;
     progressPath.style.strokeDashoffset = pathLength;
     progressPath.getBoundingClientRect();
-    progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+    progressPath.style.transition = progressPath.style.WebkitTransition =
+      "stroke-dashoffset 10ms linear";
     var updateProgress = function updateProgress() {
       var scroll = $(window).scrollTop();
       var height = $(document).height() - $(window).height();
-      var progress = pathLength - scroll * pathLength / height;
+      var progress = pathLength - (scroll * pathLength) / height;
       progressPath.style.strokeDashoffset = progress;
     };
     updateProgress();
     $(window).scroll(updateProgress);
     var offset = 50;
     var duration = 550;
-    jQuery(window).on('scroll', function () {
+    jQuery(window).on("scroll", function () {
       if (jQuery(this).scrollTop() > offset) {
-        jQuery('.progress-wrap').addClass('active-progress');
+        jQuery(".progress-wrap").addClass("active-progress");
       } else {
-        jQuery('.progress-wrap').removeClass('active-progress');
+        jQuery(".progress-wrap").removeClass("active-progress");
       }
     });
-    jQuery('.progress-wrap').on('click', function (event) {
+    jQuery(".progress-wrap").on("click", function (event) {
       event.preventDefault();
-      jQuery('html, body').animate({
-        scrollTop: 0
-      }, duration);
+      jQuery("html, body").animate(
+        {
+          scrollTop: 0,
+        },
+        duration,
+      );
       return false;
     });
-
-    /*--------------------------------------------------------------
-    UXORA MAGNIFIC PUPOP JS INIT
-    --------------------------------------------------------------*/
-    var popup_youtube = $('.video-init');
-    if (popup_youtube.is_exist()) {
-      popup_youtube.magnificPopup({
-        type: 'iframe',
-        mainClass: 'mfp-fade'
-      });
-    }
 
     /*--------------------------------------------------------------
     UXORA BRAND JS INIT
     --------------------------------------------------------------*/
 
-    var brand_slider = $('.uxora-brand-slider-init');
+    var brand_slider = $(".uxora-brand-slider-init");
     if (brand_slider.is_exist()) {
       brand_slider.slick({
         slidesToShow: 6,
@@ -131,31 +210,36 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
         autoplaySpeed: 0,
         arrows: false,
         pauseOnHover: false,
-        cssEase: 'linear',
-        responsive: [{
-          breakpoint: 1399,
-          settings: {
-            slidesToShow: 4
-          }
-        }, {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3
-          }
-        }, {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2
-          }
-        }, {
-          breakpoint: 575,
-          settings: {
-            slidesToShow: 1
-          }
-        }]
+        cssEase: "linear",
+        responsive: [
+          {
+            breakpoint: 1399,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
       });
     }
-    var p_slider_data = $('.uxora-t-slider-init');
+    var p_slider_data = $(".uxora-t-slider-init");
     if (p_slider_data.is_exist()) {
       p_slider_data.slick({
         slidesToShow: 3,
@@ -165,21 +249,24 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
         speed: 5000,
         arrows: false,
         pauseOnHover: false,
-        cssEase: 'linear',
-        responsive: [{
-          breakpoint: 1399,
-          settings: {
-            slidesToShow: 2
-          }
-        }, {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1
-          }
-        }]
+        cssEase: "linear",
+        responsive: [
+          {
+            breakpoint: 1399,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
       });
     }
-    var testimonial_slider_data = $('.uxora-t-slider-init2');
+    var testimonial_slider_data = $(".uxora-t-slider-init2");
     if (testimonial_slider_data.is_exist()) {
       testimonial_slider_data.slick({
         slidesToShow: 3,
@@ -190,18 +277,21 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
         arrows: false,
         rtl: true,
         pauseOnHover: false,
-        cssEase: 'linear',
-        responsive: [{
-          breakpoint: 1399,
-          settings: {
-            slidesToShow: 2
-          }
-        }, {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1
-          }
-        }]
+        cssEase: "linear",
+        responsive: [
+          {
+            breakpoint: 1399,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
       });
     }
 
@@ -230,15 +320,36 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
       var _iterator = _createForOfIteratorHelper(result),
         _step;
       try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+        for (_iterator.s(); !(_step = _iterator.n()).done; ) {
           var res = _step.value;
           if (isNaN(res)) {
-            stat.insertAdjacentHTML("beforeend", "<span>".concat(res, "</span>"));
+            stat.insertAdjacentHTML(
+              "beforeend",
+              "<span>".concat(res, "</span>"),
+            );
           } else {
             for (var i = 0; i < res.length; i++) {
-              stat.insertAdjacentHTML("beforeend", "<span data-value=\"".concat(res[i], "\">\n\t\t\t\t\t\t<span>&ndash;</span>\n\t\t\t\t\t\t").concat(Array(parseInt(res[i]) + 1).join(0).split(0).map(function (x, j) {
-                return "\n\t\t\t\t\t\t\t<span>".concat(j, "</span>\n\t\t\t\t\t\t");
-              }).join(""), "\n\t\t\t\t\t</span>"));
+              stat.insertAdjacentHTML(
+                "beforeend",
+                '<span data-value="'
+                  .concat(
+                    res[i],
+                    '">\n\t\t\t\t\t\t<span>&ndash;</span>\n\t\t\t\t\t\t',
+                  )
+                  .concat(
+                    Array(parseInt(res[i]) + 1)
+                      .join(0)
+                      .split(0)
+                      .map(function (x, j) {
+                        return "\n\t\t\t\t\t\t\t<span>".concat(
+                          j,
+                          "</span>\n\t\t\t\t\t\t",
+                        );
+                      })
+                      .join(""),
+                    "\n\t\t\t\t\t</span>",
+                  ),
+              );
             }
           }
         }
@@ -255,21 +366,27 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
           fresh = false;
         }, time);
         if (top < offset) {
-          setTimeout(function () {
-            var _iterator2 = _createForOfIteratorHelper(ticks),
-              _step2;
-            try {
-              for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-                var tick = _step2.value;
-                var dist = parseInt(tick.getAttribute("data-value")) + 1;
-                tick.style.transform = "translateY(-".concat(dist * 100, "%)");
+          setTimeout(
+            function () {
+              var _iterator2 = _createForOfIteratorHelper(ticks),
+                _step2;
+              try {
+                for (_iterator2.s(); !(_step2 = _iterator2.n()).done; ) {
+                  var tick = _step2.value;
+                  var dist = parseInt(tick.getAttribute("data-value")) + 1;
+                  tick.style.transform = "translateY(-".concat(
+                    dist * 100,
+                    "%)",
+                  );
+                }
+              } catch (err) {
+                _iterator2.e(err);
+              } finally {
+                _iterator2.f();
               }
-            } catch (err) {
-              _iterator2.e(err);
-            } finally {
-              _iterator2.f();
-            }
-          }, fresh ? time : 0);
+            },
+            fresh ? time : 0,
+          );
           window.removeEventListener("scroll", _activate);
         }
       };
@@ -288,55 +405,65 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
     }
     (function ($) {
       $.fn.skillBars = function (options) {
-        var settings = $.extend({
-          from: 0,
-          // number start
-          to: false,
-          // number end
-          speed: 1000,
-          // how long it should take to count between the target numbers
-          interval: 100,
-          // how often the element should be updated
-          decimals: 0,
-          // the number of decimal places to show
-          onUpdate: null,
-          // callback method for every time the element is updated,
-          onComplete: null,
-          // callback method for when the element finishes updating
-          /*onComplete: function(from) {
+        var settings = $.extend(
+          {
+            from: 0,
+            // number start
+            to: false,
+            // number end
+            speed: 1000,
+            // how long it should take to count between the target numbers
+            interval: 100,
+            // how often the element should be updated
+            decimals: 0,
+            // the number of decimal places to show
+            onUpdate: null,
+            // callback method for every time the element is updated,
+            onComplete: null,
+            // callback method for when the element finishes updating
+            /*onComplete: function(from) {
                     console.debug(this);
                 }*/
-          classes: {
-            skillBarBar: '.skillbar-bar',
-            skillBarPercent: '.skill-bar-percent'
-          }
-        }, options);
+            classes: {
+              skillBarBar: ".skillbar-bar",
+              skillBarPercent: ".skill-bar-percent",
+            },
+          },
+          options,
+        );
         return this.each(function () {
           var obj = $(this),
-            to = settings.to != false ? settings.to : parseInt(obj.attr('data-percent'));
+            to =
+              settings.to != false
+                ? settings.to
+                : parseInt(obj.attr("data-percent"));
           if (to > 100) {
             to = 100;
           }
-          ;
           var from = settings.from,
             loops = Math.ceil(settings.speed / settings.interval),
             increment = (to - from) / loops,
             loopCount = 0,
             interval = setInterval(updateValue, settings.interval);
-          obj.find(settings.classes.skillBarBar).animate({
-            width: parseInt(obj.attr('data-percent')) + '%'
-          }, settings.speed);
+          obj.find(settings.classes.skillBarBar).animate(
+            {
+              width: parseInt(obj.attr("data-percent")) + "%",
+            },
+            settings.speed,
+          );
           function updateValue() {
             from += increment;
             loopCount++;
-            $(obj).find(settings.classes.skillBarPercent).text(from.toFixed(settings.decimals) + '%');
-            if (typeof settings.onUpdate == 'function') {
+            $(obj)
+              .find(settings.classes.skillBarPercent)
+              .text(from.toFixed(settings.decimals) + "%");
+            if (typeof settings.onUpdate == "function") {
               settings.onUpdate.call(obj, from);
             }
             if (loopCount >= loops) {
               clearInterval(interval);
               from = to;
-              if (typeof settings.onComplete == 'function') {
+              if (typeof settings.onComplete == "function") {
                 settings.onComplete.call(obj, from);
               }
             }
@@ -351,7 +478,7 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
   /*--------------------------------------------------------------
   UXORA MAP JS INIT
   ------------------------------------------------------------*/
-  var google_map = $('#map');
+  var google_map = $("#map");
   if (google_map.is_exist()) {
     var init = function init() {
       var mapOptions = {
@@ -362,122 +489,169 @@ function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length)
         scaleControl: false,
         draggable: true,
         disableDefaultUI: true,
-        center: new google.maps.LatLng(40.6700, -73.9400),
-        styles: [{
-          "featureType": "landscape.man_made",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#f7f1df"
-          }]
-        }, {
-          "featureType": "landscape.natural",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#d0e3b4"
-          }]
-        }, {
-          "featureType": "landscape.natural.terrain",
-          "elementType": "geometry",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "poi",
-          "elementType": "labels",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "poi.business",
-          "elementType": "all",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "poi.medical",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#fbd3da"
-          }]
-        }, {
-          "featureType": "poi.park",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#bde6ab"
-          }]
-        }, {
-          "featureType": "road",
-          "elementType": "geometry.stroke",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "road",
-          "elementType": "labels",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        }, {
-          "featureType": "road.highway",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#ffe15f"
-          }]
-        }, {
-          "featureType": "road.highway",
-          "elementType": "geometry.stroke",
-          "stylers": [{
-            "color": "#efd151"
-          }]
-        }, {
-          "featureType": "road.arterial",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#ffffff"
-          }]
-        }, {
-          "featureType": "road.local",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "black"
-          }]
-        }, {
-          "featureType": "transit.station.airport",
-          "elementType": "geometry.fill",
-          "stylers": [{
-            "color": "#cfb2db"
-          }]
-        }, {
-          "featureType": "water",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#a2daf2"
-          }]
-        }]
+        center: new google.maps.LatLng(40.67, -73.94),
+        styles: [
+          {
+            featureType: "landscape.man_made",
+            elementType: "geometry",
+            stylers: [
+              {
+                color: "#f7f1df",
+              },
+            ],
+          },
+          {
+            featureType: "landscape.natural",
+            elementType: "geometry",
+            stylers: [
+              {
+                color: "#d0e3b4",
+              },
+            ],
+          },
+          {
+            featureType: "landscape.natural.terrain",
+            elementType: "geometry",
+            stylers: [
+              {
+                visibility: "off",
+              },
+            ],
+          },
+          {
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [
+              {
+                visibility: "off",
+              },
+            ],
+          },
+          {
+            featureType: "poi.business",
+            elementType: "all",
+            stylers: [
+              {
+                visibility: "off",
+              },
+            ],
+          },
+          {
+            featureType: "poi.medical",
+            elementType: "geometry",
+            stylers: [
+              {
+                color: "#fbd3da",
+              },
+            ],
+          },
+          {
+            featureType: "poi.park",
+            elementType: "geometry",
+            stylers: [
+              {
+                color: "#bde6ab",
+              },
+            ],
+          },
+          {
+            featureType: "road",
+            elementType: "geometry.stroke",
+            stylers: [
+              {
+                visibility: "off",
+              },
+            ],
+          },
+          {
+            featureType: "road",
+            elementType: "labels",
+            stylers: [
+              {
+                visibility: "off",
+              },
+            ],
+          },
+          {
+            featureType: "road.highway",
+            elementType: "geometry.fill",
+            stylers: [
+              {
+                color: "#ffe15f",
+              },
+            ],
+          },
+          {
+            featureType: "road.highway",
+            elementType: "geometry.stroke",
+            stylers: [
+              {
+                color: "#efd151",
+              },
+            ],
+          },
+          {
+            featureType: "road.arterial",
+            elementType: "geometry.fill",
+            stylers: [
+              {
+                color: "#ffffff",
+              },
+            ],
+          },
+          {
+            featureType: "road.local",
+            elementType: "geometry.fill",
+            stylers: [
+              {
+                color: "black",
+              },
+            ],
+          },
+          {
+            featureType: "transit.station.airport",
+            elementType: "geometry.fill",
+            stylers: [
+              {
+                color: "#cfb2db",
+              },
+            ],
+          },
+          {
+            featureType: "water",
+            elementType: "geometry",
+            stylers: [
+              {
+                color: "#a2daf2",
+              },
+            ],
+          },
+        ],
       };
-      var mapElement = document.getElementById('map');
+      var mapElement = document.getElementById("map");
       var map = new google.maps.Map(mapElement, mapOptions);
       var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6700, -73.9400),
+        position: new google.maps.LatLng(40.67, -73.94),
         map: map,
         // icon: 'assets/images/all-img/contact/map.png',
-        title: 'uxora'
+        title: "uxora",
       });
-      var contentString = '<div id="content">' + '<div id="tpw">' + '<h3>uxora' + '</div>';
+      var contentString =
+        '<div id="content">' + '<div id="tpw">' + "<h3>uxora" + "</div>";
       var infowindow = new google.maps.InfoWindow({
         content: contentString,
-        maxWidth: 280
+        maxWidth: 280,
       });
       marker.setAnimation(google.maps.Animation.BOUNCE);
       setTimeout(function () {
         marker.setAnimation(null);
-      }, 750); //time it takes for one bounce   
+      }, 750); //time it takes for one bounce
 
-      google.maps.event.addListener(marker, 'click', function () {
+      google.maps.event.addListener(marker, "click", function () {
         infowindow.open(map, marker);
       });
     };
-    google.maps.event.addDomListener(window, 'load', init);
+    google.maps.event.addDomListener(window, "load", init);
   }
 })(jQuery);
 
@@ -493,13 +667,13 @@ $(document).ready(function () {
   // Uncomment this to disaplay monthly on page load
   toggle(false);
   function toggle(checked) {
-    $(".toggle-button").prop('checked', checked);
+    $(".toggle-button").prop("checked", checked);
     if (checked) {
-      $('.coreMonthlyPrice, .proMonthlyPrice').show();
-      $('.coreAnnuallyText, .coreAnnuallyPrice, .proAnnuallyPrice').hide();
+      $(".coreMonthlyPrice, .proMonthlyPrice").show();
+      $(".coreAnnuallyText, .coreAnnuallyPrice, .proAnnuallyPrice").hide();
     } else {
-      $('.coreMonthlyPrice,.proMonthlyPrice').hide();
-      $('.coreAnnuallyText,.coreAnnuallyPrice, .proAnnuallyPrice').show();
+      $(".coreMonthlyPrice,.proMonthlyPrice").hide();
+      $(".coreAnnuallyText,.coreAnnuallyPrice, .proAnnuallyPrice").show();
     }
   }
 });
@@ -538,18 +712,24 @@ $(window).on("load", function () {
     =    Preloader      =
 =============================================*/
 function preloader() {
-  $('.preloader').delay(0).fadeOut();
+  $(".preloader").delay(0).fadeOut();
 }
-;
-
 // Table BTN Trigger
 $("#l5-pricing-btn .toggle-btn").on("click", function (e) {
   console.log($(e.target).parent().parent().hasClass("monthly-active"));
   $(e.target).toggleClass("clicked");
   if ($(e.target).parent().parent().hasClass("monthly-active")) {
-    $(e.target).parent().parent().removeClass("monthly-active").addClass("yearly-active");
+    $(e.target)
+      .parent()
+      .parent()
+      .removeClass("monthly-active")
+      .addClass("yearly-active");
   } else {
-    $(e.target).parent().parent().removeClass("yearly-active").addClass("monthly-active");
+    $(e.target)
+      .parent()
+      .parent()
+      .removeClass("yearly-active")
+      .addClass("monthly-active");
   }
 });
 $("[data-pricing-trigger]").on("click", function (e) {
