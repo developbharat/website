@@ -3,8 +3,11 @@
     <div class="uxora-menu-area text-center">
         <div class="uxora-menu-mobile-top">
             <div class="mobile-logo">
-                <a href="/">
-                    <img src="/assets/images/logo/logo-dark.svg" alt="logo" />
+                <a href={import.meta.env.BASE_URL}>
+                    <img
+                        src={`${import.meta.env.BASE_URL}assets/images/logo/logo-dark.svg`}
+                        alt="logo"
+                    />
                 </a>
             </div>
             <button class="uxora-menu-toggle mobile">
@@ -13,26 +16,30 @@
         </div>
         <div class="uxora-mobile-menu">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/solutions">Solutions</a></li>
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/contact-us">Contact</a></li>
-                <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="/faqs">FAQs</a></li>
-                        <li><a href="/sign-in">Sign In</a></li>
-                        <li><a href="/sign-up">Sign-Up</a></li>
-                        <li>
-                            <a href="forgot-password.html">Forgot Password</a>
-                        </li>
-                    </ul>
+                <li><a href={import.meta.env.BASE_URL}>Home</a></li>
+                <li>
+                    <a href={`${import.meta.env.BASE_URL}solutions`}
+                        >Solutions</a
+                    >
+                </li>
+                <li>
+                    <a href={`${import.meta.env.BASE_URL}pricing`}>Pricing</a>
+                </li>
+                <li><a href={`${import.meta.env.BASE_URL}faqs`}>FAQs</a></li>
+                <li>
+                    <a href={`${import.meta.env.BASE_URL}contact-us`}>Contact</a
+                    >
                 </li>
             </ul>
         </div>
         <div class="uxora-mobile-menu-btn">
-            <a class="uxora-default-btn sm-size" href="/sign-in">Login</a>
-            <a class="uxora-default-btn sm-size" href="/sign-up"
+            <a
+                class="uxora-default-btn sm-size"
+                href={`${import.meta.env.BASE_URL}sign-in`}>Login</a
+            >
+            <a
+                class="uxora-default-btn sm-size"
+                href={`${import.meta.env.BASE_URL}sign-up`}
                 >Create new account</a
             >
         </div>
@@ -45,9 +52,9 @@
         <div class="row gx-3 align-items-center justify-content-between">
             <div class="col-8 col-sm-auto">
                 <div class="header-logo">
-                    <a href="/">
+                    <a href={import.meta.env.BASE_URL}>
                         <img
-                            src="/assets/images/logo/logo-dark.svg"
+                            src={`${import.meta.env.BASE_URL}assets/images/logo/logo-dark.svg`}
                             alt="logo"
                         />
                     </a>
@@ -59,14 +66,27 @@
                         class="main-menu menu-style1 d-none d-lg-block menu-left"
                     >
                         <ul>
-                            <li><a href="/">Home</a></li>
+                            <li><a href={import.meta.env.BASE_URL}>Home</a></li>
                             <li>
-                                <a href="/solutions">Solutions</a>
+                                <a href={`${import.meta.env.BASE_URL}solutions`}
+                                    >Solutions</a
+                                >
                             </li>
-                            <li><a href="/pricing">Pricing</a></li>
-                            <li><a href="/faqs">FAQs</a></li>
                             <li>
-                                <a href="/contact-us">Contact</a>
+                                <a href={`${import.meta.env.BASE_URL}pricing`}
+                                    >Pricing</a
+                                >
+                            </li>
+                            <li>
+                                <a href={`${import.meta.env.BASE_URL}faqs`}
+                                    >FAQs</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href={`${import.meta.env.BASE_URL}contact-us`}
+                                    >Contact</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -76,12 +96,17 @@
                 <div class="uxora-header-info-wraper2">
                     <div class="uxora-header-info-content">
                         <ul>
-                            <li><a href="/sign-up">नया खाता बनाएँ</a></li>
+                            <li>
+                                <a href={`${import.meta.env.BASE_URL}sign-up`}
+                                    >नया खाता बनाएँ</a
+                                >
+                            </li>
                         </ul>
                     </div>
                     <a
                         class="uxora-default-btn uxora-header-btn"
-                        href="/sign-in">अपने खाते में लॉगिन करें।</a
+                        href={`${import.meta.env.BASE_URL}sign-in`}
+                        >अपने खाते में लॉगिन करें।</a
                     >
                 </div>
                 <div class="uxora-header-menu">

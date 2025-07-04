@@ -25,12 +25,12 @@ import FooterSection from "@components/Shared/FooterSection.astro";
 
         <link
             rel="shortcut icon"
-            href="/assets/images/favicon.ico"
+            href={`${import.meta.env.BASE_URL}assets/images/favicon.ico`}
             type="image/x-icon"
         />
         <link
             rel="icon"
-            href="/assets/images/favicon.ico"
+            href={`${import.meta.env.BASE_URL}assets/images/favicon.ico`}
             type="image/x-icon"
         />
         <!--- End favicon-->
@@ -46,15 +46,36 @@ import FooterSection from "@components/Shared/FooterSection.astro";
 
         <!-- End google font  -->
 
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/assets/css/remixicon.css" />
-        <link rel="stylesheet" href="/assets/css/magnific-popup.css" />
-        <link rel="stylesheet" href="/assets/css/fontawesome.css" />
-        <link rel="stylesheet" href="/assets/css/slick.css" />
+        <link
+            rel="stylesheet"
+            href={`${import.meta.env.BASE_URL}assets/css/bootstrap.min.css`}
+        />
+        <link
+            rel="stylesheet"
+            href={`${import.meta.env.BASE_URL}assets/css/remixicon.css`}
+        />
+        <link
+            rel="stylesheet"
+            href={`${import.meta.env.BASE_URL}assets/css/magnific-popup.css`}
+        />
+        <link
+            rel="stylesheet"
+            href={`${import.meta.env.BASE_URL}assets/css/fontawesome.css`}
+        />
+        <link
+            rel="stylesheet"
+            href={`${import.meta.env.BASE_URL}assets/css/slick.css`}
+        />
         <!-- Code Editor  -->
 
-        <link rel="stylesheet" href="/assets/css/main.css" />
-        <link rel="stylesheet" href="/assets/css/app.min.css" />
+        <link
+            rel="stylesheet"
+            href={`${import.meta.env.BASE_URL}assets/css/main.css`}
+        />
+        <link
+            rel="stylesheet"
+            href={`${import.meta.env.BASE_URL}assets/css/app.min.css`}
+        />
     </head>
 
     <body>
@@ -109,17 +130,33 @@ import FooterSection from "@components/Shared/FooterSection.astro";
 
         <FooterSection />
         <!-- scripts -->
-        <script src="/assets/js/jquery-3.7.1.min.js" is:inline></script>
+        <script
+            src={`${import.meta.env.BASE_URL}assets/js/jquery-3.7.1.min.js`}
+            is:inline></script>
 
-        <script src="/assets/js/bootstrap.bundle.min.js" is:inline></script>
-        <script src="/assets/js/menu/menu.js" is:inline></script>
-        <script src="/assets/js/faq.js" is:inline></script>
-        <script src="/assets/js/anime.min.js" is:inline></script>
-        <script src="/assets/js/data-attr-helper.js" is:inline></script>
-        <script src="/assets/js/anime-helper.js" is:inline></script>
-        <script src="/assets/js/slick.js" is:inline></script>
-        <script src="/assets/js/jquery.magnific-popup.min.js" is:inline
+        <script
+            src={`${import.meta.env.BASE_URL}assets/js/bootstrap.bundle.min.js`}
+            is:inline></script>
+        <script
+            src={`${import.meta.env.BASE_URL}assets/js/menu/menu.js`}
+            is:inline></script>
+        <script src={`${import.meta.env.BASE_URL}assets/js/faq.js`} is:inline
         ></script>
-        <script src="/assets/js/app.js" is:inline></script>
+        <script
+            src={`${import.meta.env.BASE_URL}assets/js/anime.min.js`}
+            is:inline></script>
+        <script
+            src={`${import.meta.env.BASE_URL}assets/js/data-attr-helper.js`}
+            is:inline></script>
+        <script
+            src={`${import.meta.env.BASE_URL}assets/js/anime-helper.js`}
+            is:inline></script>
+        <script src={`${import.meta.env.BASE_URL}assets/js/slick.js`} is:inline
+        ></script>
+        <script
+            src={`${import.meta.env.BASE_URL}assets/js/jquery.magnific-popup.min.js`}
+            is:inline></script>
+        <script src={`${import.meta.env.BASE_URL}assets/js/app.js`} is:inline
+        ></script>
     </body>
 </html>
