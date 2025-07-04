@@ -12,10 +12,12 @@ import CTASection from "@components/Shared/CTASection.astro";
                     <div class="breadcrumb-menu-wrap">
                         <div class="breadcrumb-menu">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <a href={import.meta.env.BASE_URL}>Home</a>
+                                </li>
                                 <li>
                                     <img
-                                        src="assets/images/feature/slash.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/feature/slash.svg`}
                                         alt="slash"
                                     />
                                 </li>
@@ -149,7 +151,10 @@ import CTASection from "@components/Shared/CTASection.astro";
                         >
                     </div>
                     <div class="uxora-pricing-shape">
-                        <img src="assets/images/pricing/icon2.svg" alt="" />
+                        <img
+                            src={`${import.meta.env.BASE_URL}assets/images/pricing/icon2.svg`}
+                            alt=""
+                        />
                     </div>
                 </div>
                 <div class="uxora-pricing-item mt-50">
@@ -191,11 +196,15 @@ import CTASection from "@components/Shared/CTASection.astro";
                     <div class="uxora-pricing-btn">
                         <a
                             class="uxora-default-btn pricing-btn"
-                            href="contact-us.html">Choose a plan</a
+                            href={`${import.meta.env.BASE_URL}contact-us`}
+                            >Choose a plan</a
                         >
                     </div>
                     <div class="uxora-pricing-shape">
-                        <img src="assets/images/pricing/icon1.svg" alt="" />
+                        <img
+                            src={`${import.meta.env.BASE_URL}assets/images/pricing/icon1.svg`}
+                            alt=""
+                        />
                     </div>
                 </div>
             </div>
@@ -212,7 +221,7 @@ import CTASection from "@components/Shared/CTASection.astro";
                 <div class="col-lg-6 order-lg-2">
                     <div class="uxora-content-thumb thumb3">
                         <img
-                            src="assets/images/pricing/Integration.png"
+                            src={`${import.meta.env.BASE_URL}assets/images/pricing/Integration.png`}
                             alt=""
                         />
                     </div>
@@ -258,12 +267,12 @@ import CTASection from "@components/Shared/CTASection.astro";
                                 <div class="uxora-active-icon">
                                     <img
                                         class="plasicon"
-                                        src="assets/images/faq/mynus.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/mynus.svg`}
                                         alt=""
                                     />
                                     <img
                                         class="mynusicon"
-                                        src="assets/images/faq/plas.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/plas.svg`}
                                         alt=""
                                     />
                                 </div>
@@ -283,12 +292,12 @@ import CTASection from "@components/Shared/CTASection.astro";
                                 <div class="uxora-active-icon">
                                     <img
                                         class="plasicon"
-                                        src="assets/images/faq/mynus.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/mynus.svg`}
                                         alt=""
                                     />
                                     <img
                                         class="mynusicon"
-                                        src="assets/images/faq/plas.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/plas.svg`}
                                         alt=""
                                     />
                                 </div>
@@ -308,12 +317,12 @@ import CTASection from "@components/Shared/CTASection.astro";
                                 <div class="uxora-active-icon">
                                     <img
                                         class="plasicon"
-                                        src="assets/images/faq/mynus.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/mynus.svg`}
                                         alt=""
                                     />
                                     <img
                                         class="mynusicon"
-                                        src="assets/images/faq/plas.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/plas.svg`}
                                         alt=""
                                     />
                                 </div>
@@ -333,12 +342,12 @@ import CTASection from "@components/Shared/CTASection.astro";
                                 <div class="uxora-active-icon">
                                     <img
                                         class="plasicon"
-                                        src="assets/images/faq/mynus.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/mynus.svg`}
                                         alt=""
                                     />
                                     <img
                                         class="mynusicon"
-                                        src="assets/images/faq/plas.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/plas.svg`}
                                         alt=""
                                     />
                                 </div>
@@ -358,12 +367,12 @@ import CTASection from "@components/Shared/CTASection.astro";
                                 <div class="uxora-active-icon">
                                     <img
                                         class="plasicon"
-                                        src="assets/images/faq/mynus.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/mynus.svg`}
                                         alt=""
                                     />
                                     <img
                                         class="mynusicon"
-                                        src="assets/images/faq/plas.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/faq/plas.svg`}
                                         alt=""
                                     />
                                 </div>

@@ -17,15 +17,20 @@
                         सहयोग, देश और मानवता के लिए एक सुंदर उपहार है।
                     </p>
                     <div class="uxora-hero-btn mt-50">
-                        <a href="contact-us.html" class="uxora-default-btn"
+                        <a
+                            href={`${import.meta.env.BASE_URL}sign-in`}
+                            class="uxora-default-btn"
                             >अपने खाते में लॉगिन करें।</a
                         >
-                        <!-- TODO: Add your own channel video link -->
                         <a
                             class="play-btn video-init"
-                            href="https://www.youtube.com/watch?v=QYmNMHl156E"
+                            target="_blank"
+                            href="https://www.youtube.com/@DevelopBharat"
                         >
-                            <img src="assets/images/hero/play-btn.svg" alt="" />
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/images/hero/play-btn.svg`}
+                                alt=""
+                            />
                             वीडियो देखें
                         </a>
                     </div>
@@ -33,7 +38,10 @@
             </div>
             <div class="col-lg-5">
                 <div class="uxora-hero-thumb">
-                    <img src="assets/images/hero/hero1.png" alt="" />
+                    <img
+                        src={`${import.meta.env.BASE_URL}assets/images/hero/hero1.png`}
+                        alt=""
+                    />
                 </div>
             </div>
         </div>

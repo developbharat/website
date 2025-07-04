@@ -12,10 +12,12 @@ import CTASection from "@components/Shared/CTASection.astro";
                     <div class="breadcrumb-menu-wrap">
                         <div class="breadcrumb-menu">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li>
+                                    <a href={import.meta.env.BASE_URL}>Home</a>
+                                </li>
                                 <li>
                                     <img
-                                        src="assets/images/feature/slash.svg"
+                                        src={`${import.meta.env.BASE_URL}assets/images/feature/slash.svg`}
                                         alt="slash"
                                     />
                                 </li>
@@ -37,7 +39,10 @@ import CTASection from "@components/Shared/CTASection.astro";
             >
                 <div class="col-lg-6">
                     <div class="uxora-content-thumb">
-                        <img src="assets/images/solution/thumb1.png" alt="" />
+                        <img
+                            src={`${import.meta.env.BASE_URL}assets/images/solution/thumb1.png`}
+                            alt=""
+                        />
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center">
@@ -76,7 +81,10 @@ import CTASection from "@components/Shared/CTASection.astro";
                 <div class="col-xl-4 col-lg-6 col-md-6">
                     <div class="uxora-iconbox-wrap">
                         <div class="uxora-iconbox-icon">
-                            <img src="assets/images/feature/icon1.svg" alt="" />
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/images/feature/icon1.svg`}
+                                alt=""
+                            />
                         </div>
                         <div class="uxora-iconbox-content">
                             <h3>Content creation</h3>
@@ -90,7 +98,10 @@ import CTASection from "@components/Shared/CTASection.astro";
                 <div class="col-xl-4 col-lg-6 col-md-6">
                     <div class="uxora-iconbox-wrap">
                         <div class="uxora-iconbox-icon">
-                            <img src="assets/images/feature/icon3.svg" alt="" />
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/images/feature/icon3.svg`}
+                                alt=""
+                            />
                         </div>
                         <div class="uxora-iconbox-content">
                             <h3>Smart editing</h3>
@@ -104,7 +115,10 @@ import CTASection from "@components/Shared/CTASection.astro";
                 <div class="col-xl-4 col-lg-6 col-md-6">
                     <div class="uxora-iconbox-wrap">
                         <div class="uxora-iconbox-icon">
-                            <img src="assets/images/feature/icon6.svg" alt="" />
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/images/feature/icon6.svg`}
+                                alt=""
+                            />
                         </div>
                         <div class="uxora-iconbox-content">
                             <h3>Social media posts</h3>
@@ -118,7 +132,10 @@ import CTASection from "@components/Shared/CTASection.astro";
                 <div class="col-xl-4 col-lg-6 col-md-6">
                     <div class="uxora-iconbox-wrap">
                         <div class="uxora-iconbox-icon">
-                            <img src="assets/images/feature/icon7.svg" alt="" />
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/images/feature/icon7.svg`}
+                                alt=""
+                            />
                         </div>
                         <div class="uxora-iconbox-content">
                             <h3>Product description</h3>
@@ -132,7 +149,10 @@ import CTASection from "@components/Shared/CTASection.astro";
                 <div class="col-xl-4 col-lg-6 col-md-6">
                     <div class="uxora-iconbox-wrap">
                         <div class="uxora-iconbox-icon">
-                            <img src="assets/images/feature/icon8.svg" alt="" />
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/images/feature/icon8.svg`}
+                                alt=""
+                            />
                         </div>
                         <div class="uxora-iconbox-content">
                             <h3>Email content</h3>
@@ -146,7 +166,10 @@ import CTASection from "@components/Shared/CTASection.astro";
                 <div class="col-xl-4 col-lg-6 col-md-6">
                     <div class="uxora-iconbox-wrap">
                         <div class="uxora-iconbox-icon">
-                            <img src="assets/images/feature/icon9.svg" alt="" />
+                            <img
+                                src={`${import.meta.env.BASE_URL}assets/images/feature/icon9.svg`}
+                                alt=""
+                            />
                         </div>
                         <div class="uxora-iconbox-content">
                             <h3>SEO content</h3>
@@ -161,7 +184,7 @@ import CTASection from "@components/Shared/CTASection.astro";
                     <div class="uxora-iconbox-wrap">
                         <div class="uxora-iconbox-icon">
                             <img
-                                src="assets/images/feature/icon10.svg"
+                                src={`${import.meta.env.BASE_URL}assets/images/feature/icon10.svg`}
                                 alt=""
                             />
                         </div>
@@ -178,7 +201,7 @@ import CTASection from "@components/Shared/CTASection.astro";
                     <div class="uxora-iconbox-wrap">
                         <div class="uxora-iconbox-icon">
                             <img
-                                src="assets/images/feature/icon11.svg"
+                                src={`${import.meta.env.BASE_URL}assets/images/feature/icon11.svg`}
                                 alt=""
                             />
                         </div>
@@ -195,7 +218,7 @@ import CTASection from "@components/Shared/CTASection.astro";
                     <div class="uxora-iconbox-wrap">
                         <div class="uxora-iconbox-icon">
                             <img
-                                src="assets/images/feature/icon12.svg"
+                                src={`${import.meta.env.BASE_URL}assets/images/feature/icon12.svg`}
                                 alt=""
                             />
                         </div>
@@ -295,7 +318,7 @@ import CTASection from "@components/Shared/CTASection.astro";
                     <div class="col-lg-6">
                         <div class="uxora-content-thumb">
                             <img
-                                src="assets/images/content/thumb1.png"
+                                src={`${import.meta.env.BASE_URL}assets/images/content/thumb1.png`}
                                 alt=""
                             />
                         </div>
@@ -325,7 +348,7 @@ import CTASection from "@components/Shared/CTASection.astro";
                     <div class="col-lg-6 order-lg-2">
                         <div class="uxora-content-thumb">
                             <img
-                                src="assets/images/content/thumb5.png"
+                                src={`${import.meta.env.BASE_URL}assets/images/content/thumb5.png`}
                                 alt=""
                             />
                         </div>
